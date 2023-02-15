@@ -63,6 +63,7 @@ nav {
   padding: 10px;
   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.289);
   font-weight: bold;
+  
 }
 
 nav a {
@@ -72,6 +73,7 @@ nav a {
   margin: 10px;
   border-radius: 5px;
   transition-duration: 0.5s;
+  
 }
 
 nav a:hover {
@@ -138,7 +140,7 @@ div.image img {
   bottom: 0;
 }
 
-@media (max-width:576px) {
+@media (max-width:350px) {
   .image img {
     align-items: center;
 
@@ -148,8 +150,29 @@ div.image img {
     text-align: center;
   }
 
+  nav a{
+    font-size: 12px;
+    padding: 1px;
+  }
+
+  aside p{
+    text-align: center;
+    padding: 3px;
+  }
+
+  .texto{
+    
+  }
+
+  .tabela{
+    text-align: center;
+    padding: 3px;
+  }
+
   table{
     align-items: center;
+    width: 100%;
+    font-size: 12px;
   }
 }
 
@@ -224,6 +247,7 @@ table td {
   padding: 5px;
   text-align: center;
 }
+
 table td.brasil {
   color: yellow;
 }
@@ -236,10 +260,12 @@ footer {
   font-weight: normal;
   font-size: 1.1em;
 }
+
 footer a {
   text-decoration: none;
   color: var(--cor2);
 }
+
 footer a:hover {
   text-decoration: underline;
   color: var(--cor1);
