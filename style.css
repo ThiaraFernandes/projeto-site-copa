@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap");
+
+@font-face {
+  font-family: "copa";
+  src: url(".fonte/qatar.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --cor0: #f4f4d5;
+  --cor1: #eaf079;
+  --cor2: #4ef33cc1;
+  --cor3: #044a16;
+  --cor4: #0aebf3;
+  --cor5: #2507d1e5;
+
+  --font-padrao: Arial, verdana, Helvetica, sans-serif;
+  --font-bebas: "Bebas Neue", cursive;
+  --fonte-copa: "copa", cursive;
+}
+
+body {
+  background-color: var(--cor0);
+  font-family: var(--font-padrao);
+}
+
+header {
+  background-image: linear-gradient(var(--cor1), var(--cor3));
+  align-items: center;
+  min-height: 150px;
+  padding-top: 40px;
+}
+
+header h1 {
+  font-family: var(--fonte-bebas);
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: normal;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.546);
+}
+
+header p {
+  font-family: var(--font-bebas);
+
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  font-weight: normal;
+  padding: 5px 10px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.546);
+  margin: auto;
+  max-width: 500px;
+}
+
+nav {
+  padding: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.289);
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--cor1);
+  margin: 10px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+nav a:hover {
+  color: var(--cor2);
+  background-color: var(--cor1);
+  font-weight: bold;
+}
+
+main {
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.456);
+  margin-bottom: 30px;
+  background-color: white;
+  min-width: 300px;
+  max-width: 1000px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main h2 {
+  color: var(--cor5);
+  font-family: var(--fonte-bebas);
+  background-image: linear-gradient(to right, var(--cor1), transparent);
+  font-size: 1.3em;
+  font-weight: normal;
+  text-indent: 8px;
+}
+
+main p {
+  margin: 15px 0px;
+  font-family: var(--font-padrao);
+  line-height: 2em;
+  text-indent: 10px;
+  text-align: justify;
+}
+
+main strong {
+  font-weight: bolder;
+  color: var(--cor2);
+}
+
+main a {
+  text-decoration: none;
+  background-color: var(--cor0);
+  padding: 2px 2px;
+  font-weight: bold;
+  color: var(--cor3);
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: var(--cor5);
+}
+
+div.image img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width:576px) {
+  .image img {
+    align-items: center;
+
+  }
+
+  header {
+    text-align: center;
+  }
+
+  table{
+    align-items: center;
+  }
+}
+
+aside {
+  background-color: rgba(62, 123, 62, 0.815);
+  color: white;
+  font-weight: normal;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.553);
+}
+aside h3.campeoes {
+  padding: 10px;
+  font-size: 1.6em;
+  background-color: var(--cor1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: yellowgreen;
+}
+
+aside h3 {
+  padding: 10px;
+  font-size: 1.6em;
+}
+
+aside p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+aside abbr {
+  text-decoration: none;
+}
+
+aside img.pequeno {
+  position: relative;
+  max-height: 200px;
+  max-width: 200px;
+  left: 80%;
+  bottom: -11em;
+}
+
+aside ol {
+  list-style-position: inside;
+  padding-left: 20px;
+  columns: 2;
+  list-style-type: "\2714\00A0\00A0";
+}
+
+aside p.tabela {
+  font-weight: bold;
+  font-size: large;
+}
+
+table {
+  padding-top: 1px;
+  background-color: #69c17c;
+  background-size: cover;
+
+  margin: 8px 0px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+table th {
+  padding: 5px;
+  background-color: var(--cor2);
+  margin: 10px;
+}
+
+table td {
+  padding: 5px;
+  text-align: center;
+}
+table td.brasil {
+  color: yellow;
+}
+
+footer {
+  background-image: linear-gradient(var(--cor1), var(--cor3));
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+footer a {
+  text-decoration: none;
+  color: var(--cor2);
+}
+footer a:hover {
+  text-decoration: underline;
+  color: var(--cor1);
+}
